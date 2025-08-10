@@ -1,34 +1,21 @@
 {
-  "description": "COMP499 desktop , primarily developed and maintained by Alexander Aric.",
-  "docker_registry": "https://index.docker.io/v1/",
+  "friendly_name": "499-Desktop",
   "image_src": "499-desktop.png",
-  "run_config": {
-    "hostname": "desktop"
-  },
-  "exec_config": {
-    "go": {
-      "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
-    },
-    "assign": {
-      "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
-    }
-  },
+  /*"image_src": "blob:https://oxigen-a.github.io/81fca980-ff91-4367-a38e-1c64e9773521",*/
+  "description": "COMP 499 lab Desktop",
+  "cores": 2,
+  "memory": 2768,
+  "gpu_count": 0,
+  "cpu_allocation_method": "Inherit",
+  "docker_registry": "https://index.docker.io/v1/",
   "categories": [
     "Desktop"
   ],
-  "friendly_name": "499-Desktop",
+  "require_gpu": false,
+  "enabled": true,
+  "image_type": "Container",
+  "name": "oxygena/comp-499:latest",
   "architecture": [
-    "amd64",
-    "arm64"
-  ],
-  "compatibility": [
-    {
-      "version": "1.17.x",
-      "image": "oxygena/comp-499",
-      "uncompressed_size_mb": 3072,
-      "available_tags": [
-        "latest"
-      ]
-    }
+    "amd64"
   ]
 }

@@ -48,3 +48,4 @@ test-timings.json
 # Cache
 *.tsbuildinfo
 .swc/
+workspaces/499-Desktop/TBD/
