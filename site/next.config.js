@@ -4,7 +4,7 @@ const nextConfig = {
   output: 'export',
   distDir: '../public',
   env: {
-    name: 'Kasm Technologies',
+    name: 'CSSE Technologies',
     description: 'The Concordia University CSSE custom store for Kasm-supported workspaces.',
     icon: '/img/logo.svg',
     listUrl: 'https://Oxigen-a.github.io/kasm-registry/',
